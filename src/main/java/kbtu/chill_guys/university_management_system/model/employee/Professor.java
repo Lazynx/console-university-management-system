@@ -11,19 +11,19 @@ public class Professor implements Researcher {
     private Vector<ResearchProject> researchProjects;
     private Vector<ResearchPaper> researchPapers;
 
-    private Vector<ResearchProject> getResearchProjects() {
+    public Vector<ResearchProject> getResearchProjects() {
         return this.researchProjects;
     }
 
-    private void setResearchProjects(Vector<ResearchProject> researchProjects) {
+    public void setResearchProjects(Vector<ResearchProject> researchProjects) {
         this.researchProjects = researchProjects;
     }
 
-    private Vector<ResearchPaper> getResearchPapers() {
+    public Vector<ResearchPaper> getResearchPapers() {
         return this.researchPapers;
     }
 
-    private void setResearchPapers(Vector<ResearchPaper> researchPapers) {
+    public void setResearchPapers(Vector<ResearchPaper> researchPapers) {
         this.researchPapers = researchPapers;
     }
 }

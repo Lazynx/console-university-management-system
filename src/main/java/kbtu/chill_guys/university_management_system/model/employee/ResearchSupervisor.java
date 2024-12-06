@@ -13,35 +13,35 @@ public class ResearchSupervisor implements Researcher {
     private Vector<GraduateStudent> supervisedStudents ;
     private Vector<ResearchPaper> supervisedResearchPapers;
 
-    private Integer getHIndex() {
+    public Integer getHIndex() {
         return this.hIndex;
     }
 
-    private void setHIndex(Integer hIndex) {
+    public void setHIndex(Integer hIndex) {
         this.hIndex = hIndex;
     }
 
-    private Vector<ResearchProject> getSupervisedProjects () {
+    public Vector<ResearchProject> getSupervisedProjects () {
         return this.supervisedProjects ;
     }
 
-    private void setSupervisedProjects (Vector<ResearchProject> supervisedProjects ) {
+    public void setSupervisedProjects (Vector<ResearchProject> supervisedProjects ) {
         this.supervisedProjects  = supervisedProjects ;
     }
 
-    private Vector<GraduateStudent> getSupervisedStudents () {
+    public Vector<GraduateStudent> getSupervisedStudents () {
         return this.supervisedStudents ;
     }
 
-    private void setSupervisedStudents (Vector<GraduateStudent> supervisedStudents ) {
+    public void setSupervisedStudents (Vector<GraduateStudent> supervisedStudents ) {
         this.supervisedStudents  = supervisedStudents ;
     }
 
-    private Vector<ResearchPaper> getSupervisedResearchPapers() {
+    public Vector<ResearchPaper> getSupervisedResearchPapers() {
         return this.supervisedResearchPapers;
     }
 
-    private void setSupervisedResearchPapers(Vector<ResearchPaper> supervisedResearchPapers) {
+    public void setSupervisedResearchPapers(Vector<ResearchPaper> supervisedResearchPapers) {
         this.supervisedResearchPapers = supervisedResearchPapers;
     }
 }

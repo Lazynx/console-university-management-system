@@ -1,8 +1,8 @@
 package universityManagementSystem.models.employee;
 
 import universityManagementSystem.models.academic.Complaint;
-import universityManagementSystem.permissions.CanViewRequests;
-import universityManagementSystem.permissions.CanViewStudents;
+import universityManagementSystem.permission.CanViewRequests;
+import universityManagementSystem.permission.CanViewStudents;
 
 import java.util.Vector;
 

@@ -1,7 +1,7 @@
 package universityManagementSystem.models.employee;
 import universityManagementSystem.models.BaseUser;
 import universityManagementSystem.models.student.Student;
-import universityManagementSystem.permissions.CanViewCourses;
+import universityManagementSystem.permission.CanViewCourses;
 
 import java.util.Vector;
 
@@ -9,20 +9,16 @@ public class Employee extends BaseUser implements CanViewCourses {
     private Integer salary;
     private Teacher teacher;
 
-    private Integer getSalary() {
-        return this.salary;
-    }
-    
-    private void setSalary(Integer salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
-
-    public void sendMessage() {
-        //TODO
+    public Integer getSalary() {
+        return this.salary;
     }
-    
-    public Vector<Student> viewStudents() {
-        //TODO
-        return null;
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+    public Teacher getTeacher() {
+        return this.teacher;
     }
 }

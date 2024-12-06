@@ -1,39 +1,17 @@
 package universityManagementSystem.models.employee;
 
-import universityManagementSystem.permissions.CanViewRequests;
-import universityManagementSystem.permissions.CanViewTeachers;
-import universityManagementSystem.enums.organization.ManagerType;
+import universityManagementSystem.permission.CanViewRequests;
+import universityManagementSystem.permission.CanViewTeachers;
+import universityManagementSystem.enumeration.organization.ManagerType;
 
 public class Manager implements CanViewRequests, CanViewTeachers {
     private ManagerType ManagerType;
 
-    private ManagerType getManagerType() {
+    public ManagerType getManagerType() {
         return this.ManagerType;
     }
 
-    private void setManagerType(ManagerType ManagerType) {
+    public void setManagerType(ManagerType ManagerType) {
         this.ManagerType = ManagerType;
-    }
-
-    public String makeReport() {
-        //TODO
-        return "";
-    }
-
-    public void addNews() {
-        //TODO
-    }
-
-    public void assignCourseToTeacher() {
-        //TODO
-    }
-
-    public void addCourseForRegistration() {
-        //TODO
-    }
-
-    public boolean approveStudentRegistration() {
-        //TODO
-        return false;
     }
 }
